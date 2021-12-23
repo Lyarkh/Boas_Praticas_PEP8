@@ -1,8 +1,8 @@
 #Testes das classes criadas
-from fabrica_fila import FabricaFila
-from estatistica_resumida import EstatisticaResumida
-from estatistica_detalhada import EstatisticaDetalhada
-from fila_prioritaria import FilaPrioritaria
+from classes.fabrica_fila import FabricaFila
+from classes.estatistica_resumida import EstatisticaResumida
+from classes.estatistica_detalhada import EstatisticaDetalhada
+
 
 #Rodar Testes separadamente
 
@@ -31,6 +31,6 @@ print(fila_teste_2.chama_cliente(5))
 print(fila_teste_2.chama_cliente(7))
 
 
-print(fila_teste_2.estatistica("20/03/2025", 120, EstatisticaResumida))
-print(fila_teste_2.estatistica("20/03/2025", 120, EstatisticaDetalhada))
+print(fila_teste_2.estatistica(EstatisticaResumida("20/03/2025", 120)))
+print(fila_teste_2.estatistica(EstatisticaDetalhada("20/03/2025", 120)))
     

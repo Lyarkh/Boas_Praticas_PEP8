@@ -1,8 +1,8 @@
 from typing import Union
 
-from fila_normal import FilaNormal
-from fila_prioritaria import FilaPrioritaria
-from constantes import TIPO_FILA_NORMAL, TIPO_FILA_PRIORITARIA
+from .fila_normal import FilaNormal
+from .fila_prioritaria import FilaPrioritaria
+from .constantes import TIPO_FILA_NORMAL, TIPO_FILA_PRIORITARIA
 
 class FabricaFila:
     

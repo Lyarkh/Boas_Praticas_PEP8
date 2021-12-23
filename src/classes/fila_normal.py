@@ -1,6 +1,5 @@
-from fila_base import FilaBase
-
-from constantes import CODIGO_FILA_NORMAL
+from .fila_base import FilaBase
+from .constantes import CODIGO_FILA_NORMAL
 
 
 class FilaNormal(FilaBase):
