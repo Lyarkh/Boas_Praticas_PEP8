@@ -13,12 +13,16 @@ class FilaBase(metaclass=ABCMeta):
         else:
             self.codigo += 1
 
-    @abstractmethod
-    def gera_senha_atual(self):
-        pass
+    def atualiza_fila(self):
+        self.reseta_fila()
+        self.gera_senha_atual()
+        self.insere_cliente()
+        
+    def insere_cliente(self):
+        self.fila.append(self.senha_atual)
 
     @abstractmethod
-    def atualiza_fila(self):
+    def gera_senha_atual(self):
         pass
 
     @abstractmethod
