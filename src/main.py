@@ -1,22 +1,21 @@
 #Testes das classes criadas
-from fila_normal import filanormal
+from fila_normal import FilaNormal
 from fila_prioritaria import FilaPrioritaria
 
-""" 
---------Teste_01--------
-fila_teste = filanormal()
-fila_teste.atualizafila()
-fila_teste.atualizafila()
-fila_teste.atualizafila()
-fila_teste.atualizafila()
-fila_teste.atualizafila()
-fila_teste.atualizafila()
 
-print(fila_teste.chamacliente(5))
-print(fila_teste.chamacliente(10)) """
+print("--------Teste_01--------")
+fila_teste = FilaNormal()
+fila_teste.atualiza_fila()
+fila_teste.atualiza_fila()
+fila_teste.atualiza_fila()
+fila_teste.atualiza_fila()
+fila_teste.atualiza_fila()
+fila_teste.atualiza_fila()
 
+print(fila_teste.chama_cliente(5))
+print(fila_teste.chama_cliente(10))
 
-#--------Teste_02--------
+print("\n--------Teste_02--------")
 fila_teste_2 = FilaPrioritaria()
 fila_teste_2.atualiza_fila()
 fila_teste_2.atualiza_fila()
